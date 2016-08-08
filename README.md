@@ -18,10 +18,33 @@ I wanted to use a 4x4 Matrix Keypad in a Raspberry Pi project running on Windows
    ![Diagram](https://raw.githubusercontent.com/lluppes/pikeypad/master/Pi_Keypad_Wiring.png)
    ![Photo](https://raw.githubusercontent.com/lluppes/pikeypad/master/Pi_Keypad_Picture.jpg)
 
-3. Download the CS_Universal_App project
-4. Update the MatrixKeypadPage.xaml.cs if you used different pins.
-5. Run that project and test it out
+3. Download the CS_Universal_App folder and open the MatrixKeypad.csproj.
 
-Let me know if you have problems with these scripts!
+4. Update the MatrixKeypadPage.xaml.cs if you used different pins than what I listed above.
+
+5. Deploy the project to your Pi and test it out!
+
+If you want to use it in other projects, all you should need is the MatrixKeypadMonitor.cs file.  Include that and then put this code in your code somewhere
+```
+  // The List on the next line is the GPIO pins that you hooked up
+  var matrixPad = new MatrixKeypadMonitor(new List<int> { 16, 20, 21, 5, 6, 13, 19, 26 });
+  // Subscribe to an event that is triggered when a keypress happens
+  if (matrixPad.SetupSuccessful)
+  {
+      matrixPad.FoundADigitEvent += FoundDigit;
+  }
+  else
+  {
+      Debug.WriteLine(matrixPad.SetupMessage);
+  }
+  
+  public void FoundDigit(object sender, string digit)
+  {
+    Debug.WriteLine(string.Format("{0} was pressed!", digit));
+    // Do something here with your keypress
+  }
+```
+
+Hope this helps!
 
 Lyle
