@@ -5,8 +5,11 @@ I wanted to use a 4x4 Matrix Keypad in a Raspberry Pi project running on Windows
 
 ###Steps to get your Pi and Keypad running
 1. Buy a keypad and a Raspberry Pi 3
-*(https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/)
-*(https://www.amazon.com/gp/product/B00TNF7Q6Y/)
+
+  (https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/)
+  
+  (https://www.amazon.com/gp/product/B00TNF7Q6Y/)
+  
 2. Wire up your matrix keypad to 8 GPIO pins on your Raspberry Pi and make a list of the 8 pin numbers you used.
    For my project, I hooked them up to Pins 16, 20, 21, 5, 6, 13, 19, 26
    ![Diagram](https://raw.githubusercontent.com/lluppes/pikeypad/master/Pi_Keypad_Wiring.png)
