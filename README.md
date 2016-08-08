@@ -19,7 +19,7 @@ I wanted to use a 4x4 Matrix Keypad in a Raspberry Pi project running on Windows
 
 3. Download the CS_Universal_App folder and open the MatrixKeypad.csproj.
 
-4. Update the MatrixKeypadPage.xaml.cs if you used different pins than what I listed above.
+4. Update the MatrixKeypadPage.xaml.cs (Line 28) if you used different pins than what I listed above.
 
 5. Deploy the project to your Pi and test it out!
 
