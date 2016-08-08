@@ -10,6 +10,9 @@ I wanted to use a 4x4 Matrix Keypad in a Raspberry Pi project running on Windows
   
   https://www.amazon.com/gp/product/B00TNF7Q6Y/  (~$7)
   
+  https://www.amazon.com/Foxnovo-Breadboard-Jumper-Wires-Female/dp/B00PBZMN7C/ (~$5)
+  <a href="https://www.amazon.com/Foxnovo-Breadboard-Jumper-Wires-Female/dp/B00PBZMN7C/" target="_blank">Male/Femail Jumper Wires</a>
+  
 2. Wire up your matrix keypad to 8 GPIO pins on your Raspberry Pi and make a list of the 8 pin numbers you used.
    For my project, I hooked them up to Pins 16, 20, 21, 5, 6, 13, 19, 26
    ![Diagram](https://raw.githubusercontent.com/lluppes/pikeypad/master/Pi_Keypad_Wiring.png)
