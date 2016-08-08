@@ -25,7 +25,7 @@ I wanted to use a 4x4 Matrix Keypad in a Raspberry Pi project running on Windows
 5. Deploy the project to your Pi and test it out!
 
 ###Using this in your project
-If you want to use it in other projects, all you should need is the MatrixKeypadMonitor.cs file.  Include that and then put this code in your code somewhere
+If you want to use it in other projects, all you should need is the MatrixKeypadMonitor.cs file.   Include that file and then put this code in your code somewhere.
 ```
   // The List on the next line is the GPIO pins that you hooked up
   var matrixPad = new MatrixKeypadMonitor(new List<int> { 16, 20, 21, 5, 6, 13, 19, 26 });
@@ -39,6 +39,7 @@ If you want to use it in other projects, all you should need is the MatrixKeypad
       Debug.WriteLine(matrixPad.SetupMessage);
   }
   
+  // This event gets triggered when a key is pressed
   public void FoundDigit(object sender, string digit)
   {
     Debug.WriteLine(string.Format("{0} was pressed!", digit));
