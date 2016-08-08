@@ -3,7 +3,7 @@
 I wanted to use a 4x4 Matrix Keypad in a Raspberry Pi project running on Windows 10 IoT Core, but I couldn't find any libraries that supported it, so I had to write one myself.  This is my first attempt and seems to work pretty well, but there are a few minor issues with it - mainly that you can't press they keys really fast - there has to be a slight delay between presses.  I'm not sure if that's a problem with this code, or with the keypad.  
 
 ###Steps to get your Keypad and Pi running
-1. Buy a keypad and a Raspberry Pi 3. (You can buy these from many places, but I'm impatient and like Amazon Prime overnight shipping, so these are all using Amazon Prime!)
+1. Buy a keypad and a Raspberry Pi 3. (You can buy these from many places, but I'm impatient and like Amazon Prime overnight shipping, so these are all available overnight using Amazon Prime!)
 
   Raspberry Pi ($35-$75, depending on accessories) - https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/  
   
