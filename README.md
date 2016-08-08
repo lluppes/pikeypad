@@ -1,5 +1,4 @@
-# pikeypad
-##How to use a 4x4 Matrix Keypad with a Raspberry Pi
+#How to use a 4x4 Matrix Keypad with a Raspberry Pi
 
 I wanted to use a 4x4 Matrix Keypad in a Raspberry Pi project running on Windows 10 IoT Core, but I couldn't find any libraries that supported it, so I had to write one myself.  This is my first attempt and seems to work pretty well, but there are a few minor issues with it - mainly that you can't press they keys really fast - there has to be a slight delay between presses.  I'm not sure if that's a problem with this code, or with the keypad.  
 
